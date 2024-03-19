@@ -184,6 +184,7 @@
             <a href="#"  id="email-link" class="social-link mailtop">
                 <i class="fas fa-envelope"></i>
             </a>
+            <i id="scrollToTopBtn" class="fas fa-arrow-up"></i>
 
         </div>
     </footer>
@@ -212,6 +213,26 @@
         event.preventDefault();
         window.location.href = 'mailto:imkkrish05@gmail.com';
         });
+        document.addEventListener('DOMContentLoaded', function() {
+    var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Show the button when user scrolls down
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 100) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+
+    // Scroll to top when the button is clicked
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
 
     </script>
 </body>
