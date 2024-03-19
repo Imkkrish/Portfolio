@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="main" id="top">
+            <!-- Desktop view navigation -->
+            <div class="nav-desktop">
+            <a href="index.html">Home</a>
+            <a href="#">Project</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Contact</a>
+            </div>
+
+            <!-- Responsive view navigation -->
+            <div class="nav-responsive" id="myNav">
+            <a href="index.html">Home</a>
+            <a href="#">Project</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Contact</a>
+            </div>
+            <div CLASS="block">
+                <div class="display">
+                    <img src="krish.jpg" alt="profilephoto" class="dpimg">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box">
+            <p id="title">Hi, I am Krish Kumar</p>
+            <p id="about">I am a Front-end Web Developer currently pursuing an Integrated Bachelor's and Master's degree in Computer Science & Engineering with a specialization in Machine Learning & Data Science at CUJ, Ranchi.</p>
+            <hr>
+        </div>
+        
+    </div>
+    <footer>
+        
+    </footer>
+    <script>
+        // JavaScript function to toggle responsive navigation
+        function toggleNav() {
+            var nav = document.getElementById("myNav");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
