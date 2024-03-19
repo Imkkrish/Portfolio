@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,22 +12,26 @@
         <div class="main" id="top">
             <!-- Desktop view navigation -->
             <div class="nav-desktop">
-            <a href="index.html">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Contact</a>
+                <a href="#top">Home</a>
+                <a href="#project">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#Education">Education</a>
+                <a href="#contact">Contact</a>
             </div>
-
             <!-- Responsive view navigation -->
             <div class="nav-responsive" id="myNav">
-            <a href="index.html">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Contact</a>
+                <a href="#top">Home</a>
+                <a href="#project">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#Education">Education</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div id="toggleButton" onclick="toggleNav()"></div>
+            <div class="container" onclick="toggleNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            
             <div class="blank"></div>
             <div CLASS="block">
                 <div class="display">
@@ -35,40 +40,179 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="box " >
+    <div class="container2">
+        <div class="box " id="top" >
             <p id="name">Hi, I am Krish Kumar</p>
             <p id="about">I am a Front-end Web Developer currently pursuing an Integrated Bachelor's and Master's degree in Computer Science & Engineering with a specialization in Machine Learning & Data Science at CUJ, Ranchi.</p>
             <hr>
+            <div class="connection"><!--Section for social media connect as column grid-->
+                <a href="https://www.linkedin.com/in/imkkrish/" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/imk_krish/" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Imkkrish" target="_blank" class="social-link githubtop">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#"  id="email-link" class="social-link mailtop">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="#" target="_blank" class="social-link docstop">
+                    <i class="fas fa-file"></i>
+                </a>
+                
+                
+            </div>
         </div>
-        <div class="box">
+        <div class="box prj" id="project">
             <h2 id="title">Projects</h2>
             <div class="prbox">
                 <img src="img/Pj1.png" alt="Project 1" class="primg">
-                <p id="prdesc">Description of the project goes here.</p>
+                <a href="https://ccpc-cuj.github.io/CodeCrafter/"><h4 id="pretitle">CcpC Website</h4></a>
+                <p id="prdesc">As the front-end developer, I led the design and development of CCPC's website, utilizing HTML, CSS, and JavaScript. While collaborating with friends, I assumed a leadership role, contributing over 90% of the work. Ensured the website's aesthetics, user-friendliness, and compatibility across different devices. This project showcased my ability to drive web development initiatives effectively while promoting teamwork and collaboration within the club. </p>
+                
             </div>
             
+            
         </div>
-        <div class="box">
+        <div class="box" id="skills">
             <h2 id="title">Skills</h2>
+            <div class="skill-domain">
+                <h3>WEB DEVELOPMENT</h3>
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 88%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 20%;"></div>
+                </div>
+            </div><div class="skill">
+                <div class="skill-name">PHP</div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 25%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">MySQL</div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            <h2 id="title">Education</h2>
+            <hr>
+            <br>
+            <div class="skill-domain">
+                <h3>PROGRAMMING LANGUAGE</h3>
+                <div class="skill">
+                    <div class="skill-name">JAVA</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">C</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">C++</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Python</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="Education">
+            <h2 id="title">Education </h2>
+            <div class="edu">
+                <h3>&#x1F393; Central University of Jharkhand</h3>
+                <p id="edu-about">Integrated B.Tech & M.Tech in Computer Science & Engineering (Machine Learning & Data Science)</p>
+                <p id="edu-year">2022 - Present</p>
+            </div>
+                <hr>
+            <div class="edu">
+                <h3>&#x1F468;&#x200D;&#x1F393; DAV Public School Sec - 4 Bokaro</h3>
+                <p id="edu-about">PCM with Computer Science</p>
+                <p id="edu-year">2020 - 21</p>
+            </div>
+                <hr>
+            <div class="edu">
+                <h3>&#x1F468;&#x200D;&#x1F393; St. Francis School Deoghar</h3>
+                <p id="edu-about">Matriculation</p>
+                <p id="edu-year">2010 - 20</p>
+            </div>
         </div>
     </div>
-    <footer>
-        
+    <footer id="contact">
+        <div class="social-connection" id=" contact"><!--Section for social media connect as column grid-->
+            <a href="https://www.linkedin.com/in/imkkrish/" target="_blank" class="social-link linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/imk_krish/" target="_blank" class="social-link instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Imkkrish" target="_blank" class="social-link github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#"  id="email-link" class="social-link mailtop">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
     </footer>
     <script>
-        // JavaScript function to toggle responsive navigation
         function toggleNav() {
-            var nav = document.getElementById("myNav");
-            if (nav.style.display === "block") {
-                nav.style.display = "none";
-            } else {
-                nav.style.display = "block";
-            }
+        var nav = document.getElementById("myNav");
+        var bars = document.querySelector('.container');
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+            bars.classList.remove("change");
+        } else {
+            nav.style.display = "block";
+            bars.classList.add("change");
         }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        document.getElementById('email-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'mailto:imkkrish05@gmail.com';
+        });
+
     </script>
 </body>
 </html>
