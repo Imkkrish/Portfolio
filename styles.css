@@ -1,232 +1,295 @@
 body{
-    background-color:#f4f2ee;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+background-color:#f4f2ee;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 header{
-    
-    background-image: url('img/head.png'); /* Replace 'your-image.jpg' with your image path */
-    background-size: cover;
-    
-    border-radius: 0 0 60% 60%;
+
+background-image: url('img/head.png'); /* Replace 'your-image.jpg' with your image path */
+background-size: cover;
+
+border-radius: 0 0 60% 60%;
 }
-footer{
+.connection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 30px;;
+    padding-left: 20px;
     
-    background-image: url('img/head.png'); /* Replace 'your-image.jpg' with your image path */
-    background-size: cover;
-    height: 100px;
-    border-radius: 60% 60% 0 0;
+    }
+    /* Style for GitHub icon */
+    .githubtop:hover {
+    color: #000000; /* Change to GitHub color on hover */
+    }
+    .docstop:hover {
+        color: #0078D4; /* Change to docs color on hover */
+    }
+    .mailtop:hover {
+            color: #dd0000; /* Change to docs color on hover */
+    }
+    .social-connection img {
+    width: 15px;
+    height: 15px;
+    }
+footer{
+
+background-image: url('img/head.png'); /* Replace 'your-image.jpg' with your image path */
+background-size: cover;
+height: 100px;
+border-radius: 60% 60% 0 0;
 }
 .nav-desktop {
-    width: 40%;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+width: 40%;
+height: 10vh;
+display: flex;
+flex-direction: row;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
 }
 
 .nav-desktop a {
-    color: aliceblue;
-    text-decoration: none;
+color: aliceblue;
+text-decoration: none;
 }
 
 .nav-desktop a:hover {
-    color: #9b7221;
+color: #9b7221;
+}
+
+.nav-responsive {
+display: none;
+padding-left: 70px; /* Add margin to push down the links */
+padding-top: 20px;
+}
+
+.nav-responsive a {
+display: block;
+padding: 05px;
+text-decoration: none;
+color: #ffffff;
+}
+
+.container {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #5d030300;
+    color: aliceblue;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fcfcfc;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.blank{
+height: 10px;
+
+}
+.block{
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+height: 100px;
+}
+.display {
+width: 200px; /* Adjust width as needed */
+height: 200px; /* Adjust height as needed */
+background-color: white;
+border-radius: 50%;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid #ccc; /* Optional: Add border for styling */
+position: relative;
+transition: transform 0.3s;
+
+
+}
+.dpimg{
+max-width: 100%;
+max-height: 100%;
+}
+.container2{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 20px;
+}
+.box.bx1{
+width: 60%;
+padding: 20px; /* Adjust padding as needed */
+margin: 20px; /* Adjust margin as needed */
+background-color: #ffffff;
+border: 2px solid #b6b6b6;
+border-radius: 6px;
+box-shadow: 0 0 20px 1px #1a1a1a;
+font-size: 30;
+}
+.box {
+width: 60%;
+padding: 10px; /* Adjust padding as needed */
+margin: 10px; /* Adjust margin as needed */
+background-color: #ffffff;
+border: 2px solid #b6b6b6;
+border-radius: 6px;
+box-shadow: 0 0 20px 1px #1a1a1a;
+font-size: 30;
+}
+.box.prj{
+display: flex;
+flex-direction: column;
+}
+#name{
+display: flex;
+justify-content: center;
+font-size: 48px;
+padding: 20px; /* Adjust padding as needed */
+color: rgb(0, 0, 0);
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 3);
+}
+#title{
+display: flex;
+justify-content: center;
+font-size: 28px;
+color: rgb(0, 0, 0);
+
+}
+#about{
+display: flex;
+justify-content: center;
+font-size: 14px;
+padding-left: 20px; 
+padding-right: 20px;
+margin-top: 5px;
+}
+.prbox{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+border: #000000 1px solid;
+border-radius: 6px;
+}
+.primg{
+margin: 5px;
+max-width: 60%;
+max-height: 60%;
+border: #818181 2px solid;
+}
+#pretitle{
+margin:2px;
+color: #000000;
+
+}
+#prdesc{
+    margin-left: 5px;
+    margin-right: 5px;
+    max-height: 100px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrollbar when content overflows */
+
+}
+
+.skill {
+margin-bottom: 20px;
+}
+
+.skill-name {
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.progress {
+width: 100%;
+background-color: #f0f0f0;
+border-radius: 4px;
+height: 10px;
+overflow: hidden; /* Hide overflow content if progress exceeds container */
+}
+
+.progress-bar {
+background: linear-gradient(to right, #757575 ,#00081f); /* Adjust color as needed */
+height: 100%;
+}
+
+.social-connection{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+padding-top: 30px;;
+padding-left: 20px;
+
+}
+.social-link {
+display: inline-block;
+width: 50px;
+height: 50px;
+margin: 10px;
+color: #d2edfc; /* You can style the color of the icons here */
+font-size: 24px; /* Adjust the size of the icons as needed */
+transition: transform 0.7s ease;
+}
+
+.social-link:hover {
+
+transform: scale(1.2);
+}
+/* Style for LinkedIn icon */
+.linkedin:hover {
+color: #0077b5; /* Change to LinkedIn color on hover */
+}
+
+/* Style for Instagram icon */
+.instagram:hover {
+color: #bc2a8d; /* Change to Instagram color on hover */
+}
+
+/* Style for GitHub icon */
+.github:hover {
+color: #ffffff; /* Change to GitHub color on hover */
+}
+.social-connection img {
+width: 15px;
+height: 15px;
+}
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+.nav-desktop {
+    display: none;
 }
 
 .nav-responsive {
     display: none;
-    padding-left: 70px; /* Add margin to push down the links */
-    padding-top: 20px;
 }
 
-.nav-responsive a {
+.container {
     display: block;
-    padding: 05px;
-    text-decoration: none;
-    color: #ffffff;
 }
 
-    .container {
-        display: none;
-        cursor: pointer;
-        padding: 10px;
-        background-color: #5d030300;
-        color: aliceblue;
-    }
-
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #fcfcfc;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-
-    .change .bar1 {
-        transform: translate(0, 11px) rotate(-45deg);
-    }
-
-    .change .bar2 {opacity: 0;}
-
-    .change .bar3 {
-        transform: translate(0, -11px) rotate(45deg);
-    }
-
-.blank{
-    height: 10px;
-
+.container .bar1,
+.container .bar2,
+.container .bar3 {
+    display: block;
 }
-.block{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    height: 100px;
-}
-.display {
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    background-color: white;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #ccc; /* Optional: Add border for styling */
-    position: relative;
-    transition: transform 0.3s;
-    
-
-}
-.dpimg{
-    max-width: 100%;
-    max-height: 100%;
-}
-.container2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-.box.bx1{
-    width: 60%;
-    padding: 20px; /* Adjust padding as needed */
-    margin: 20px; /* Adjust margin as needed */
-    background-color: #ffffff;
-    border: 2px solid #b6b6b6;
-    border-radius: 6px;
-    box-shadow: 0 0 20px 1px #1a1a1a;
-    font-size: 30;
-}
-.box {
-    width: 60%;
-    padding: 10px; /* Adjust padding as needed */
-    margin: 10px; /* Adjust margin as needed */
-    background-color: #ffffff;
-    border: 2px solid #b6b6b6;
-    border-radius: 6px;
-    box-shadow: 0 0 20px 1px #1a1a1a;
-    font-size: 30;
-}
-.box.prj{
-    display: flex;
-    flex-direction: column;
-}
-#name{
-    display: flex;
-    justify-content: center;
-    font-size: 48px;
-    padding: 20px; /* Adjust padding as needed */
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 3);
-}
-#title{
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
-    color: rgb(0, 0, 0);
-    
-}
-#about{
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    padding-left: 20px; 
-    padding-right: 20px;
-    margin-top: 5px;
-}
-.prbox{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: #000000 1px solid;
-    border-radius: 6px;
-}
-.primg{
-    margin: 5px;
-    max-width: 60%;
-    max-height: 60%;
-    border: #818181 2px solid;
-}
-#pretitle{
-    margin:2px;
-    color: #000000;
-
-}
-#prdesc{
-        margin-left: 5px;
-        margin-right: 5px;
-        max-height: 100px; /* Adjust the maximum height as needed */
-        overflow-y: auto; /* Enable vertical scrollbar when content overflows */
-    
-}
-
-.skill {
-    margin-bottom: 20px;
-  }
-  
-  .skill-name {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .progress {
-    width: 100%;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    height: 10px;
-    overflow: hidden; /* Hide overflow content if progress exceeds container */
-  }
-  
-  .progress-bar {
-    background: linear-gradient(to right, #757575 ,#00081f); /* Adjust color as needed */
-    height: 100%;
-  }
-
-
-/* Media query for responsiveness */
-@media only screen and (max-width: 768px) {
-    .nav-desktop {
-        display: none;
-    }
-
-    .nav-responsive {
-        display: none;
-    }
-
-    .container {
-        display: block;
-    }
-
-    .container .bar1,
-    .container .bar2,
-    .container .bar3 {
-        display: block;
-    }
 }
