@@ -97,13 +97,24 @@ footer{
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
-.box {
+.box.bx1{
     width: 60%;
     padding: 20px; /* Adjust padding as needed */
-    margin: 40px; /* Adjust margin as needed */
+    margin: 20px; /* Adjust margin as needed */
+    background-color: #ffffff;
+    border: 2px solid #b6b6b6;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 1px #1a1a1a;
+    font-size: 30;
+}
+.box {
+    width: 60%;
+    padding: 10px; /* Adjust padding as needed */
+    margin: 10px; /* Adjust margin as needed */
     background-color: #ffffff;
     border: 2px solid #b6b6b6;
     border-radius: 6px;
