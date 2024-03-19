@@ -7,14 +7,14 @@ body{
 }
 header{
     
-    background-image: url('head.png'); /* Replace 'your-image.jpg' with your image path */
+    background-image: url('img/head.png'); /* Replace 'your-image.jpg' with your image path */
     background-size: cover;
     
     border-radius: 0 0 60% 60%;
 }
 footer{
     
-    background-image: url('head.png'); /* Replace 'your-image.jpg' with your image path */
+    background-image: url('img/head.png'); /* Replace 'your-image.jpg' with your image path */
     background-size: cover;
     height: 100px;
     border-radius: 60% 60% 0 0;
@@ -42,14 +42,15 @@ footer{
 /* Responsive view styles */
 .nav-responsive {
     display: none;
-    margin-top: 50px; /* Add margin to push down the links */
+    padding-left: 70px; /* Add margin to push down the links */
+    padding-top: 20px;
 }
 
 .nav-responsive a {
     display: block;
-    padding: 10px;
+    padding: 05px;
     text-decoration: none;
-    color: #000;
+    color: #f60000;
 }
 
 /* Button for toggling responsive navigation */
@@ -69,6 +70,10 @@ footer{
     background-position: center;
     width: 30px; /* Adjust width and height as needed */
     height: 30px;
+}
+.blank{
+    height: 10px;
+
 }
 .block{
     display: flex;
