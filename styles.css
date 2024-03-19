@@ -126,12 +126,19 @@ footer{
     box-shadow: 0 0 20px 1px #1a1a1a;
     font-size: 30;
 }
-#title{
+#name{
     display: flex;
     justify-content: center;
     font-size: 48px;
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 3);
+}
+#title{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    
 }
 #about{
     display: flex;
