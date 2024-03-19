@@ -1,0 +1,138 @@
+body{
+    background-color:#f4f2ee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    
+    background-image: url('head.png'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover;
+    
+    border-radius: 0 0 60% 60%;
+}
+footer{
+    
+    background-image: url('head.png'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover;
+    height: 100px;
+    border-radius: 60% 60% 0 0;
+}
+/* Desktop view styles */
+.nav-desktop {
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.nav-desktop a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav-desktop a:hover {
+    color: #9b7221;
+}
+
+/* Responsive view styles */
+.nav-responsive {
+    display: none;
+    margin-top: 50px; /* Add margin to push down the links */
+}
+
+.nav-responsive a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Button for toggling responsive navigation */
+#toggleButton {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #9d0000;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: url('menu-icon.png'); /* Replace 'menu-icon.png' with your image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px; /* Adjust width and height as needed */
+    height: 30px;
+}
+.block{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100px;
+}
+.display {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc; /* Optional: Add border for styling */
+    position: relative;
+    transition: transform 0.3s;
+    
+
+}
+.dpimg{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.box {
+    width: 60%;
+    padding: 20px; /* Adjust padding as needed */
+    margin: 40px; /* Adjust margin as needed */
+    background-color: #ffffff;
+    border: 2px solid #b6b6b6;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 1px #1a1a1a;
+    font-size: 30;
+}
+#title{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 3);
+}
+#about{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: none; /* Initially hide responsive navigation */
+    }
+
+    #toggleButton {
+        display: block; /* Show the button in responsive view */
+    }
+}
