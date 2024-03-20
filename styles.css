@@ -32,12 +32,17 @@ justify-content: space-between;
 }
 
 .nav-desktop a {
+    padding-top: 15px;
 color: aliceblue;
 text-decoration: none;
+transition: transform 0.7s ease;
 }
 
+
 .nav-desktop a:hover {
-color: #9b7221;
+color: #3c8fc3;
+transform: scale(1.3);
+
 }
 
 .nav-responsive {
