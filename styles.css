@@ -57,7 +57,9 @@ padding: 05px;
 text-decoration: none;
 color: #ffffff;
 }
-
+.nav-responsive a:hover {
+    color: #3c8fc3;
+    }
 .container {
     display: none;
     cursor: pointer;
