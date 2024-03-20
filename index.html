@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="contact-card">
         <div class="main" id="top">
             <!-- Desktop view navigation -->
             <div class="nav-desktop">
@@ -33,17 +33,19 @@
                 <div class="bar3"></div>
             </div>
             
-            <div class="blank"></div>
+            <div class="blank">
+
+            </div>
             <div CLASS="block">
                 <div class="display">
                     <img src="img/krish.jpg" alt="profilephoto" class="dpimg">
                 </div>
             </div>
         </div>
-    </header>
     <div class="container2">
-        <div class="box " id="top" >
+        <div class="box" id="top" >
             <p id="name">Hi, I am Krish Kumar</p>
+            <p id="nameres">Hi, I am <br> Krish Kumar</p>
             <p id="about">I am a Front-end Web Developer currently pursuing an Integrated Bachelor's and Master's degree in Computer Science & Engineering with a specialization in Machine Learning & Data Science at CUJ, Ranchi.</p>
             <hr>
             <div class="connection"><!--Section for social media connect as column grid-->
@@ -53,18 +55,15 @@
                 <a href="https://www.instagram.com/imk_krish/" target="_blank" class="social-link instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://github.com/Imkkrish" target="_blank" class="social-link githubtop">
+                <a href="https://github.com/Imkkrish" target="_blank" class="social-link github">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="#"  id="email-link" class="social-link mailtop">
                     <i class="fas fa-envelope"></i>
                 </a>
-
                 <a href="#" target="_blank" class="social-link docstop">
                     <i class="fas fa-file"></i>
                 </a>
-                
-                
             </div>
         </div>
         <div class="box prj" id="project">
@@ -75,44 +74,42 @@
                 <p id="prdesc">As the front-end developer, I led the design and development of CCPC's website, utilizing HTML, CSS, and JavaScript. While collaborating with friends, I assumed a leadership role, contributing over 90% of the work. Ensured the website's aesthetics, user-friendliness, and compatibility across different devices. This project showcased my ability to drive web development initiatives effectively while promoting teamwork and collaboration within the club. </p>
                 
             </div>
-            
-            
         </div>
         <div class="box" id="skills">
             <h2 id="title">Skills</h2>
             <div class="skill-domain">
                 <h3>WEB DEVELOPMENT</h3>
-            <div class="skill">
-                <div class="skill-name">HTML</div>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 88%;"></div>
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 88%;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">CSS</div>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;"></div>
+                <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">JavaScript</div>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 20%;"></div>
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                    </div>
+                </div><div class="skill">
+                    <div class="skill-name">PHP</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                    </div>
                 </div>
-            </div><div class="skill">
-                <div class="skill-name">PHP</div>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 25%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">MySQL</div>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 70%;">
+                <div class="skill">
+                    <div class="skill-name">MySQL</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
             <hr>
             <br>
             <div class="skill-domain">
@@ -171,7 +168,7 @@
             </div>
         </div>
     </div>
-    <footer id="contact">
+    <div class="end" id="contact">
         <div class="social-connection" id=" contact"><!--Section for social media connect as column grid-->
             <a href="https://www.linkedin.com/in/imkkrish/" target="_blank" class="social-link linkedin">
                 <i class="fab fa-linkedin"></i>
@@ -188,7 +185,8 @@
             <i id="scrollToTopBtn" class="fas fa-arrow-up"></i>
 
         </div>
-    </footer>
+    </div>
+    </div>
     <script>
         function toggleNav() {
         var nav = document.getElementById("myNav");
@@ -217,6 +215,9 @@
         document.addEventListener('DOMContentLoaded', function() {
     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
+
+
+    
     // Show the button when user scrolls down
     window.addEventListener('scroll', function() {
         if (window.pageYOffset > 100) {
