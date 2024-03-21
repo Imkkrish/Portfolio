@@ -280,7 +280,7 @@ margin-bottom: 20px;
     margin: 10px;
     color: #d2edfc; /* You can style the color of the icons here */
     font-size: 24px; /* Adjust the size of the icons as needed */
-    transition: transform 0.7s ease;
+    transition: transform 0.4s ease;
 }
 
 .social-link:hover {
