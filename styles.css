@@ -261,7 +261,7 @@ margin-bottom: 20px;
 
     background-image: url('img/head.png'); /* Replace 'your-image.jpg' with your image path */
     background-size: cover;
-    height: 100px;
+    height: 200px;
     border-radius: 60% 60% 0 0;
 }
 
